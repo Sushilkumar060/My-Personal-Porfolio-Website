@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7aed65c2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        </div>
+    </div>
+    <div class="header-text">
+        <p>Software Engineer</p>
+        <h1>Hi,I'm <span>SUSHIL KUMAR</span><br> from INDIA</h1>
+    </div>
+    <!-------------------------------------------------------about---------------------------------------------->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutPhoto.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my portfolio website! I am a 4th year Software Engineering student with a passion for coding and problem-solving.
+                    I am currently pursuing my B.tech degree at KIIT UNIVERSITY,Bhubaneshwar,Odisha and learning about Programming Languages/Technologies and other related skills.
+                </p>
+                <p>
+                    Although I am still a student, I have gained valuable experience through my academic projects and extracurricular activities.
+                    I have developed my skills in [Programming like Java,phython,C, C++, HTML,CSS, Javascript and many more, and I am committed to continuous learning and development to improve my skills and stay up-to-date with the latest trends and advancements in the software engineering industry.
+                </p>
+                <p>
+                    I am a creative problem solver with an eye for detail, who is committed to delivering high-quality solutions that meet the needs of users and businesses alike.
+                    I am a team player who values collaboration, and I enjoy working with people from diverse backgrounds and skill sets.
+                </p>
+                <p>
+                    In my free time, I like to explore new technologies, work on personal coding projects and contribute to open-source projects, which allows me to apply my skills and learn from others.
+                </p>
+                <p>
+                    If you are looking for a passionate and dedicated software engineering student, please feel free to browse my portfolio and connect with me to discuss any opportunities.
+                    I am excited to start my career journey and make a positive impact in the software engineering industry.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>SOFTWARE Development</span><br>with good knowledge of Programming concept and Data structures and algorithms</li>
+                        <li><span>Web development</span><br>Front-end Web Development</li>
+                        <li><span>DATA Analyst</span><br>Good knowledge of data processing, manipulation and data handling</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><p>Made three Projects to support and show my skills in different backgrounds</p></li>
+                        <li><span>2022-Current</span><br>member of Digital marketing team of Khwaab society</li>
+                        <li><span>2022-2023</span><br>Digital Marketing Officer at KIITMUN 2022 and 2023</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>Btech from KIIT Bhubaneswar</li>
+                        <li><span>2019</span><br>Higher Secondary from DAV KAPILDEV PUBLIC SCHOOL,KADRU,RANCHI with 85.5%</li>
+                        <li><span>2018</span><br>Secondary from ST. COLOUMBUS PUBLIC SCHOOL, MURGU, RANCHI with 85.6%</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+    <!----------------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a front-end web developer, I craft visually appealing and user-friendly websites using HTML, CSS, and JavaScript. My services include custom designs, responsive layouts, and seamless user experiences to ensure your site looks great and performs well on all devices.
+                        Let's create a stunning online presence for your brand.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Software developer</h2>
+                    <p>As a software engineer with strong problem-solving skills, I excel in identifying and resolving complex technical challenges to ensure the seamless operation of your software.
+                        My approach involves thorough analysis, innovative thinking, and practical solutions to address any issues that arise during development or maintenance. By leveraging my expertise in debugging, optimization, and system architecture, I deliver reliable and efficient software solutions that enhance performance and user experience.
+                        Let's work together to tackle your toughest software problems and achieve your business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>DATA Analyst</h2>
+                    <p>As a data analyst, I provide comprehensive data analysis services to help you make informed decisions.
+                        I specialize in collecting, processing, and interpreting data to uncover insights and trends. My expertise includes data visualization, statistical analysis, and creating detailed reports to support your business strategy.
+                        Let’s leverage your data to drive growth and efficiency.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+<!--------------------------Portfolio---------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/whatsApp chat analyzer.jpeg">
+                <div class="layer">
+                    <h3>WhatsAPP Chat Analyzer</h3>
+                    <p>Developed and deployed a WhatsApp Chat Analyzer web application using Streamlit and Python, enabling detailed analysis of group and personal chats.
+                        Implemented features like identifying the most active users, sentiment analysis, and timeline breakdowns by month, week, and day, providing comprehensive insights into communication patterns.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio photo.png">
+                <div class="layer">
+                    <h3>MY Personal Portfolio</h3>
+                    <p>Crafted a personal portfolio website using HTML, CSS, and JavaScript to showcase my front-end web development skills.
+                        This responsive site highlights my projects, skills, and experience with interactive elements, demonstrating my ability to create engaging user experiences.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/library management photo.jpeg">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>Created a Java-based library management system for efficient book, patron, and transaction management.
+                        Features include book CRUD operations, patron account management, loan handling, and report generation, streamlining library operations effectively.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------------------------------------------------------contact---------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sk9002540@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7369053235</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/prem.prince.9421?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Sushil_kumar060?t=RA2bWGnShWued9fSlLOg2w&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sushil._.kumar?igsh=am4weDV4MnhsajZ3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sushil-kumar-008962224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/SUSHIL KUMAR NEW Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sushil.Made with<i class="fa-solid fa-heart"></i> by Sushil kumar</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwT7NGpxaRZMBjsPs2P8s9dpI5EIksWhxhYXxQ7qAHHk4NmSBJNoX7CXxqeyzM8r-_dPw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
+</html>
